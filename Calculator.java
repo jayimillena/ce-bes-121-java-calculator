@@ -37,6 +37,15 @@ public class Calculator
       double secondNumber  = input.nextDouble();
       System.out.println("The difference of "+ firstNumber +" and "+ secondNumber +" is "+ getDiff(firstNumber, secondNumber));  
     }
+    else if(operation.equals("3"))
+    {
+      System.out.println("You have chosen a multiplicatoin operator");
+      System.out.print("Enter the first number: ");
+      double firstNumber  = input.nextDouble();
+      System.out.print("Enter the second number: "); 
+      double secondNumber  = input.nextDouble();
+      System.out.println("The product of "+ firstNumber +" and "+ secondNumber +" is "+ getProd(firstNumber, secondNumber));  
+    }
 
     input.close();
   }
@@ -49,5 +58,10 @@ public class Calculator
   public static double getDiff(double firstNumber, double secondNumber)
   {
     return firstNumber - secondNumber;
+  }
+
+  public static double getProd(double firstNumber, double secondNumber)
+  {
+    return firstNumber * secondNumber;
   }
 }
