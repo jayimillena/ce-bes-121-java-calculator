@@ -27,6 +27,15 @@ public class Calculator
       System.out.print("Enter the second number: "); 
       double secondNumber  = input.nextDouble();
       System.out.println("The sum of "+ firstNumber +" and "+ secondNumber +" is "+ getSum(firstNumber, secondNumber));  
+    } 
+    else if(operation.equals("2"))
+    {
+      System.out.println("You have chosen a subtraction operator");
+      System.out.print("Enter the first number: ");
+      double firstNumber  = input.nextDouble();
+      System.out.print("Enter the second number: "); 
+      double secondNumber  = input.nextDouble();
+      System.out.println("The difference of "+ firstNumber +" and "+ secondNumber +" is "+ getDiff(firstNumber, secondNumber));  
     }
 
     input.close();
@@ -35,5 +44,10 @@ public class Calculator
   public static double getSum(double firstNumber, double secondNumber)
   {
     return firstNumber + secondNumber;
+  }
+
+  public static double getDiff(double firstNumber, double secondNumber)
+  {
+    return firstNumber - secondNumber;
   }
 }
